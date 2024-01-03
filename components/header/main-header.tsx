@@ -1,13 +1,21 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import DeskImg from "../../assets/DeskImg.png";
 import TypingAnimation from "./TypingAnimation";
 import NavBar from "./navBar";
 import Arrow from "../../assets/arrow.svg";
-import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
+import {
+  ParallaxBanner,
+  ParallaxProvider,
+  useParallax,
+} from "react-scroll-parallax";
 
 export const MainHeader: React.FC = () => {
+  const handleScrollTo = () => {
+    window.scrollTo({ top: 650, behavior: "smooth" });
+   
+  };
   return (
     <ParallaxProvider>
       <header className="relative w-full h-[100dvh] flex justify-start items-start overflow-hidden">
@@ -19,7 +27,10 @@ export const MainHeader: React.FC = () => {
               <br />
               Full Stack Web Developer
             </p>
-            <button className="z-10 bg-cyan-50 bg-opacity-25 group relative flex flex-row justify-evenly items-center gap-3 w-fit p-5 h-14 text-xl border-2 text-white hover:bg-cyan-500 hover:ease-in-out hover:border-cyan-500 hover:duration-1000 duration-500">
+            <button
+              onClick={handleScrollTo}
+              className="z-10 bg-cyan-50 bg-opacity-25 group relative flex flex-row justify-evenly items-center gap-3 w-fit p-5 h-14 text-xl border-2 text-white hover:bg-cyan-500 hover:ease-in-out hover:border-cyan-500 hover:duration-1000 duration-500"
+            >
               Check my work
               <Image
                 src={Arrow.src}
