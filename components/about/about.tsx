@@ -4,23 +4,17 @@ import React, { useEffect, useState } from "react";
 
 export default function AboutMe() {
   const [isOnPosition, setIsOnPosition] = useState<boolean>(false);
+  const [opacity, setOpacity] = useState<number>(0);
+  const fadeInDuration = 3000;
 
-  const scrollHeader = () => {
-    if (window.scrollY >= 100) {
-      setIsOnPosition(true);
-    }
-  };
   useEffect(() => {
     window.addEventListener("scroll", scrollHeader);
     return () => {
       window.addEventListener("scroll", scrollHeader);
     };
   }, []);
-  const [opacity, setOpacity] = useState<number>(0);
 
   useEffect(() => {
-    const fadeInDuration = 3000;
-
     if (isOnPosition) {
       let startTime: number;
 
@@ -42,9 +36,16 @@ export default function AboutMe() {
       requestAnimationFrame(animate);
     }
   }, [isOnPosition]);
+
   useEffect(() => {
     scrollHeader();
   }, []);
+
+  const scrollHeader = () => {
+    if (window.scrollY >= 100) {
+      setIsOnPosition(true);
+    }
+  };
   return (
     <div className="w-full h-full flex flex-col">
       <div className="w-full h-fit flex justify-end items-end text-3xl">
