@@ -3,6 +3,10 @@ export default function ThemeButton() {
     <div className="z-10 absolute right-20 mt-2">
       <label className="cursor-pointer grid place-items-center">
         <input
+          onClick={() => {
+            console.log("test");
+            document.documentElement.classList.toggle("dark");
+          }}
           type="checkbox"
           value="synthwave"
           className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"

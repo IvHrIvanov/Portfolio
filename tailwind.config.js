@@ -6,6 +6,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     screens: {
       tablet: { max: "1180px", min: "600px" },
@@ -29,6 +30,7 @@ module.exports = {
       },
       colors: {
         nameColor: "#de1c6a",
+        darkGray: "#121212",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

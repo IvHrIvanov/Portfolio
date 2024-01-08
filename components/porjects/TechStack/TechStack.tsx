@@ -9,11 +9,11 @@ export default function TechStack() {
   const width = 100;
   const height = 100;
   const imageStyling =
-    "hover:bg-gray-50 shadow-md hover:shadow-xl p-4 m-2 rounded-lg hover:origin-top-right duration-300 ease-in-out";
+    "hover:bg-gray-50 dark:border-2 dark:hover:border-white dark:hover:shadow-white dark:hover:shadow shadow-md hover:shadow-xl p-4 m-2 rounded-lg hover:origin-top-right duration-300 ease-in-out";
   return (
-    <div className="w-full min-h-screen">
-      <div className="w-full h-fit flex justify-end items-end text-3xl">
-        <h1 className="h-fit w-fit mt-5 underline underline-offset-[15px] mr-10">
+    <div className="w-full min-h-screen ">
+      <div className="w-full h-fit flex justify-end items-end text-3xl ">
+        <h1 className="h-fit w-fit mt-5 underline underline-offset-[15px] mr-10 dark:text-white">
           TECH STACK
         </h1>
       </div>

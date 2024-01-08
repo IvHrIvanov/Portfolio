@@ -7,7 +7,6 @@ interface Props {
 }
 const RenderImages: React.FC<Props> = (props) => {
   const { arrayOfImages, height, imageStyling, width } = props;
-  console.log("test", arrayOfImages, height, imageStyling, width);
 
   return (
     <>

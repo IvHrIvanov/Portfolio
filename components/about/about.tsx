@@ -49,7 +49,7 @@ export default function AboutMe() {
   return (
     <div className="w-full h-full flex flex-col">
       <div className="w-full h-fit flex justify-end items-end text-3xl">
-        <h1 className="h-fit w-fit mt-5 underline underline-offset-[15px] mr-10">
+        <h1 className="h-fit w-fit mt-5 underline underline-offset-[15px] mr-10 dark:text-white">
           ABOUT
         </h1>
       </div>
