@@ -18,6 +18,15 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
+      animation: {
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
       colors: {
         nameColor: "#de1c6a",
       },
