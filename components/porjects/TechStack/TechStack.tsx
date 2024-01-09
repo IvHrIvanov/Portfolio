@@ -4,12 +4,11 @@ import Csharp from "../../../assets/TechStack/CsharpIMG.png";
 import Tailwind from "../../../assets/TechStack/TailwindIMG.png";
 import TypeScript from "../../../assets/TechStack/TypeScriptIMG.png";
 import RenderImages from "../../renderImages/renderImages";
+import { IMAGE_STYLING } from "../../../constans/styleConstans";
 export default function TechStack() {
   const imgArray = [NodeJsImg, React, Csharp, Tailwind, TypeScript];
   const width = 100;
   const height = 100;
-  const imageStyling =
-    "hover:bg-gray-50 dark:border-2 dark:hover:border-white dark:hover:shadow-white dark:hover:shadow shadow-md hover:shadow-xl p-4 m-2 rounded-lg hover:origin-top-right duration-300 ease-in-out";
   return (
     <div className="w-full min-h-screen ">
       <div className="w-full h-fit flex justify-end items-end text-3xl ">
@@ -25,7 +24,7 @@ export default function TechStack() {
                 arrayOfImages={imgArray}
                 width={width}
                 height={height}
-                imageStyling={imageStyling}
+                imageStyling={IMAGE_STYLING}
               />
             </ul>
             <ul className="flex items-center p-2 justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
@@ -33,7 +32,7 @@ export default function TechStack() {
                 arrayOfImages={imgArray}
                 width={width}
                 height={height}
-                imageStyling={imageStyling}
+                imageStyling={IMAGE_STYLING}
               />
             </ul>
           </div>
