@@ -17,14 +17,14 @@ export default function NavBar() {
       window.addEventListener("scroll", scrollHeader);
     };
   }, []);
-  const liStyle = `hover:scale-125 duration-300 ease-in-out origin-top p-1 text-xl ${
+  const liStyle = `hover:scale-125 duration-300 ease-in-out origin-top p-1 text-xl dark:text-white ${
     header ? "text-black" : "text-white"
   }`;
 
   return (
     <div
-      className={`w-full h-fit flex flex-row z-20  ${
-        header ? "fixed shadow-md bg-white top-0" : "absolute top-6"
+      className={`w-full h-[60px] items-center justify-center flex flex-row z-20  ${
+        header ? "fixed shadow-md backdrop-blur-md top-0" : "absolute top-6"
       }`}
     >
       <nav className="w-full h-fit z-10 flex items-center justify-center top-0">

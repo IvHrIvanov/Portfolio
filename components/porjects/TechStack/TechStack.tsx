@@ -10,9 +10,9 @@ export default function TechStack() {
   const width = 100;
   const height = 100;
   return (
-    <div className="w-full min-h-screen">
-      <div className="w-full h-fit flex justify-end items-end text-3xl">
-        <h1 className="h-fit w-fit mt-5 underline underline-offset-[15px] mr-10">
+    <div className="w-full min-h-screen ">
+      <div className="w-full h-fit flex justify-end items-end text-3xl ">
+        <h1 className="h-fit w-fit mt-5 underline underline-offset-[15px] mr-10 dark:text-white">
           TECH STACK
         </h1>
       </div>
